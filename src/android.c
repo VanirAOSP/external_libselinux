@@ -834,7 +834,7 @@ static struct selabel_handle *get_selabel_handle(const struct selinux_opt opts[]
         close(fd);
         goto err;
     }
-    SHA_hash(map, sb.st_size, fc_digest);
+   // SHA_hash(map, sb.st_size, fc_digest);
     munmap(map, sb.st_size);
     close(fd);
 
